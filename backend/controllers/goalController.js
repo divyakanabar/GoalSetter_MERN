@@ -17,14 +17,14 @@ const setGoal = (req, res) => {
 // @route PUT /api/goals/:id
 // @access Private
 const updateGoal = (req, res) => {
-  res.status(200).json({ message: `Update goal ${req.param.id}` });
+  res.status(200).json({ message: `Update goal ${req.params.id}` });
 };
 
 // @desc Delete Goals
 // @route DELETE /api/goals/:id
 // @access Private
 const deleteGoal = (req, res) => {
-  res.status(200).json({ message: `Delete goal ${req.param.id}` });
+  res.status(200).json({ message: `Delete goal ${req.params.id}` });
 };
 
 module.exports = {
