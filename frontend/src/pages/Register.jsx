@@ -32,7 +32,6 @@ function Register() {
     }
 
     dispatch(reset())
-    console.log('im the prob')
   }, [user, isError, isSuccess, message, navigate, dispatch])
 
   const onChange = (e) => {
