@@ -1,4 +1,4 @@
-# Housing Marketplace
+# Goal Setter App
 
 This is a web application that allows users to set, update and delete goals. Users can create an account, add goals, view and delete a goal once its done. This application is built using the MERN stack (MongoDB, Express, React, Node.js) and JWT.
 
