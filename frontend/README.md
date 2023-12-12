@@ -1,46 +1,39 @@
-# Getting Started with Create React App and Redux
+# Housing Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This is a web application that allows users to set, update and delete goals. Users can create an account, add goals, view and delete a goal once its done. This application is built using the MERN stack (MongoDB, Express, React, Node.js) and JWT.
 
-## Available Scripts
+![Example Image](Example.png)
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To install and run this project, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Clone this repository: git clone https://github.com/divyakanabar/GoalSetter_MERN.git
+    Install dependencies for the server: cd server && npm install
+    Install dependencies for the client: cd client && npm install
+    Update the MONGODB_URI variable in backend/config/db.js file
+    Update the NODE_ENV variable to development in backend/middleware/errorMiddleware.js
+    Update the PORT variable to 5000 in backend/server.js
+    Update the JWT_SERECT to yourJWT_SERECT in backend/controllers/userController.js & backend/middleware/authMiddleware.js
+    Start the server: cd server && npm start
+    Start the client: cd client && npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+Once the server and client are running, open a web browser and navigate to http://localhost:${PORT}. From there, you can:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Register for an account
+    Login to your account
+    Add a goal
+    Browse or delete your goals
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This web application has the following features:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    User authentication: users can register and login to their account.
+    Goals list: users can add and delete their goals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions or feedback, please contact me at divyakanabar9@gmail.com
