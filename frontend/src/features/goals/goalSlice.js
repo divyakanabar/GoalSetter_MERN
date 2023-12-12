@@ -43,6 +43,23 @@ export const getGoals = createAsyncThunk(
   }
 );
 
+// Delete a goal
+export const deleteGoal = createAsyncThunk(
+  "goals/delete",
+  async (id, thunkAPI) => {
+    try {
+      const token = thunkAPI.getState().auth.user.token;
+      return await goalService.deleteGoal(id, token);
+    } catch (error) {
+      const message =
+        (error.response && error.response.data && error.response.message) ||
+        error.message ||
+        error.toString();
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 export const goalSlice = createSlice({
   name: "goal",
   initialState,
